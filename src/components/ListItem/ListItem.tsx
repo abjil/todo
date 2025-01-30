@@ -7,7 +7,7 @@ export const ListItem = ({ todo }: { todo: ToDo }) => {
             isDone={todo.isDone}
             //            target="_blank"
             rel="noreferrer"
-            href={`/todo/list/${todo.id}`}
+            to={`/list/${todo.id}`}
         >
             {todo.text}
         </ListItemLink>
