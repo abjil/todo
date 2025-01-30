@@ -8,7 +8,7 @@ export const ViewListItem = () => {
 
     const todoList = useSelector((state: RootState) => state.todoList.todos)
 
-    const { id } = useParams();
+    const { id } = useParams<{ id: string }>()
     const navigate = useNavigate();
     const [todo, setTodo] = useState<ToDo>();
 
